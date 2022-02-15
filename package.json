@@ -1,0 +1,27 @@
+{
+  "name": "rescript-project-template",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "rescript:build": "rescript",
+    "rescript:clean": "rescript clean -with-deps",
+    "rescript:dev": "rescript build -w",
+    "dev": "node server.js",
+    "build": "./node_modules/.bin/esbuild --define:process.env.NODE_ENV=\\\"production\\\" --define:process.env.BACKEND_URL=\\\"$BACKEND_URL\\\" app.tsx --bundle --outfile=public/app.js"
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@rescript/react": "^0.10.3",
+    "dotenv": "^10.0.0",
+    "esbuild": "^0.13.1",
+    "ihp-backend": "*",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rescript": "*",
+    "rescript-ihp-backend": "https://ihpbackend.digitallyinduced.com/ShowTypescriptDeclarationFile?typescriptDeclarationFileId=1a5c8383-354e-47ef-adce-b165f56a9160&accessToken=dxQAlLQxRVImMNeSxfYctOuvpSmiVifw"
+  }
+}

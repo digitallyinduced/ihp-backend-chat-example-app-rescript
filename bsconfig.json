@@ -1,0 +1,18 @@
+{
+  "name": "rescript-project-template",
+  "version": "0.0.1",
+  "sources": {
+    "dir" : "src",
+    "subdirs" : true
+  },
+  "package-specs": {
+    "module": "es6-global",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": ["@rescript/react", "rescript-ihp-backend"],
+  "warnings": {
+    "error" : "+101"
+  },
+  "reason": { "react-jsx": 3 }
+}
